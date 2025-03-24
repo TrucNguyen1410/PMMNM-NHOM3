@@ -1,0 +1,87 @@
+/* Định dạng tổng thể */
+.chat-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f2f5;
+}
+
+.chat-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Tiêu đề chatbot */
+.chat-header {
+  background: #5a9ea0;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Khu vực hiển thị tin nhắn */
+.chat-messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Định dạng tin nhắn */
+.message {
+  max-width: 60%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin: 8px;
+  word-wrap: break-word;
+}
+
+/* Tin nhắn của bot (bên trái) */
+.bot {
+  background: #d3d3d3;
+  color: black;
+  align-self: flex-start;
+}
+
+/* Tin nhắn của người dùng (bên phải) */
+.user {
+  background: #5a9ea0;
+  color: white;
+  align-self: flex-end;
+}
+
+/* Khu nhập tin nhắn */
+.chat-input {
+  display: flex;
+  padding: 15px;
+  background: #cceff1;
+  border-radius: 0 0 15px 15px;
+  align-items: center;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.chat-input button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 10px;
+}
